@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Baby ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="book">
+    <div class="topline">
+      <span class="tiny-heart">♥</span>
+      <span id="counter">01 / 07</span>
+    </div>
+
+    <!-- SHEET 1 -->
+    <section class="sheet active" data-sheet="0">
+      <div class="sparkles">✦ ♡ ✧ ♡ ✦</div>
+      <p class="eyebrow">A little something made with love</p>
+      <h1>Happy Birthday,<br><em>Baby!</em> 🎂</h1>
+      <div class="hero-doodle">🧸 💗 🧸</div>
+      <p class="subtitle">I made a tiny surprise for my favourite person.</p>
+      <p class="prompt">Are you ready for your surprise?</p>
+      <button class="next-btn" type="button">Yes, show me! <span>♡</span></button>
+    </section>
+
+    <!-- SHEET 2: Pop Balloons (Message displays directly on the popped balloon) -->
+    <section class="sheet" data-sheet="1">
+      <p class="eyebrow">A tiny birthday game</p>
+      <h2>Pop the balloons</h2>
+      <p class="subtitle">Tap any balloon again and again to reveal its message.</p>
+      <div class="balloon-area">
+        <button class="balloon rose-card" type="button" aria-label="Pop pink balloon">
+          <div class="balloon-front">
+            <svg viewBox="0 0 80 115" class="balloon-svg">
+              <path d="M40 78 Q35 92 42 100 T39 113" fill="none" stroke="#c9a6aa" stroke-width="2" stroke-linecap="round"/>
+              <polygon points="36,78 44,78 40,72" fill="#e58ca0"/>
+              <ellipse cx="40" cy="40" rx="28" ry="34" fill="#f3a6b8"/>
+              <ellipse cx="30" cy="27" rx="6" ry="11" transform="rotate(-22 30 27)" fill="rgba(255,255,255,0.45)"/>
+              <text x="40" y="46" text-anchor="middle" fill="#fff" font-size="18">♡</text>
+            </svg>
+          </div>
+          <div class="balloon-msg">
+            <span class="pop-sparkle">✦</span>
+            <p>May all the happiness you give find its way back to you.</p>
+          </div>
+        </button>
+
+        <button class="balloon lilac-card" type="button" aria-label="Pop lilac balloon">
+          <div class="balloon-front">
+            <svg viewBox="0 0 80 115" class="balloon-svg">
+              <path d="M40 78 Q45 92 38 100 T41 113" fill="none" stroke="#c9a6aa" stroke-width="2" stroke-linecap="round"/>
+              <polygon points="36,78 44,78 40,72" fill="#a89fd6"/>
+              <ellipse cx="40" cy="40" rx="28" ry="34" fill="#c3bce8"/>
+              <ellipse cx="30" cy="27" rx="6" ry="11" transform="rotate(-22 30 27)" fill="rgba(255,255,255,0.45)"/>
+              <text x="40" y="46" text-anchor="middle" fill="#fff" font-size="18">✦</text>
+            </svg>
+          </div>
+          <div class="balloon-msg">
+            <span class="pop-sparkle">✦</span>
+            <p>Don’t ever forget that you are someone’s favourite person.</p>
+          </div>
+        </button>
+
+        <button class="balloon mint-card" type="button" aria-label="Pop mint balloon">
+          <div class="balloon-front">
+            <svg viewBox="0 0 80 115" class="balloon-svg">
+              <path d="M40 78 Q35 92 42 100 T39 113" fill="none" stroke="#c9a6aa" stroke-width="2" stroke-linecap="round"/>
+              <polygon points="36,78 44,78 40,72" fill="#89c4b0"/>
+              <ellipse cx="40" cy="40" rx="28" ry="34" fill="#a9dac9"/>
+              <ellipse cx="30" cy="27" rx="6" ry="11" transform="rotate(-22 30 27)" fill="rgba(255,255,255,0.45)"/>
+              <text x="40" y="46" text-anchor="middle" fill="#fff" font-size="18">★</text>
+            </svg>
+          </div>
+          <div class="balloon-msg">
+            <span class="pop-sparkle">✦</span>
+            <p>I am always cheering for you.</p>
+          </div>
+        </button>
+
+        <button class="balloon peach-card" type="button" aria-label="Pop peach balloon">
+          <div class="balloon-front">
+            <svg viewBox="0 0 80 115" class="balloon-svg">
+              <path d="M40 78 Q45 92 38 100 T41 113" fill="none" stroke="#c9a6aa" stroke-width="2" stroke-linecap="round"/>
+              <polygon points="36,78 44,78 40,72" fill="#e6a68a"/>
+              <ellipse cx="40" cy="40" rx="28" ry="34" fill="#f5c2ac"/>
+              <ellipse cx="30" cy="27" rx="6" ry="11" transform="rotate(-22 30 27)" fill="rgba(255,255,255,0.45)"/>
+              <text x="40" y="46" text-anchor="middle" fill="#fff" font-size="18">♥</text>
+            </svg>
+          </div>
+          <div class="balloon-msg">
+            <span class="pop-sparkle">✦</span>
+            <p>You are loved more than you know.</p>
+          </div>
+        </button>
+      </div>
+
+      <button class="next-btn" id="balloon-next" type="button">Next <span>→</span></button>
+    </section>
+
+    <!-- SHEET 3 -->
+    <section class="sheet" data-sheet="2">
+      <p class="eyebrow">Just so you know</p>
+      <h2 class="script-heading">You are so<br><em>special</em> to me.</h2>
+      <div class="photo-frame small-frame">
+        <img src="images/photo1.jpeg" alt="A favourite memory" />
+      </div>
+      <p class="subtitle">And I hope today reminds you how much.</p>
+      <button class="next-btn" type="button">Keep going <span>→</span></button>
+    </section>
+
+    <!-- SHEET 4: Looping 5 Wishes -->
+    <section class="sheet" data-sheet="3">
+      <p class="eyebrow">Make a birthday wish</p>
+      <h2>Blow the candle, baby</h2>
+      <div class="cake">🎂<span class="flame">🕯️</span></div>
+      <p class="wish-text">Close your eyes<br />and make a wish.</p>
+      <button class="wish-btn" id="wish-btn" type="button">I made a wish ✨</button>
+      <p id="wish-response" class="reveal-message"></p>
+      <button class="next-btn" type="button">Next <span>→</span></button>
+    </section>
+
+    <!-- SHEET 5 -->
+    <section class="sheet" data-sheet="4">
+      <p class="eyebrow">A few of my favourite moments</p>
+      <h2>Our little memories ♡</h2>
+      <p class="subtitle">Every picture has a piece of my heart.</p>
+      <div class="memory-grid">
+        <figure class="memory-card"><img src="images/photo2.jpeg" alt="Memory 2" /><figcaption>One of my favourites</figcaption></figure>
+        <figure class="memory-card"><img src="images/photo3.jpeg" alt="Memory 3" /><figcaption>That happy day</figcaption></figure>
+        <figure class="memory-card"><img src="images/photo4.jpeg" alt="Memory 4" /><figcaption>Us, being us</figcaption></figure>
+      </div>
+      <button class="next-btn" type="button">There's more <span>→</span></button>
+    </section>
+
+    <!-- SHEET 6: Envelope Opens to Reveal Letter -->
+    <section class="sheet" data-sheet="5">
+      <p class="eyebrow">Open when you're ready</p>
+      <h2>A little note for you</h2>
+      <div class="photo-frame note-photo"><img src="images/photo6.jpeg" alt="A favourite moment" /></div>
+
+      <button class="envelope" id="envelope" type="button" aria-label="Open the envelope">
+        <span class="envelope-heart">♥</span>
+        <span class="envelope-label" id="envelope-label">Tap to open</span>
+      </button>
+
+      <p id="envelope-note" class="envelope-note">There's something inside just for you.</p>
+
+      <!-- Hidden Letter Content revealed on envelope click -->
+      <div class="revealed-letter-wrap" id="revealed-letter" hidden>
+        <p class="eyebrow" style="margin-top: 18px;">A message from my heart</p>
+        <h3 class="letter-title">Dear, my favourite human…</h3>
+        <div class="letter-photo"><img src="images/photo5.jpeg" alt="A special memory" /></div>
+        <article class="letter">
+          <span class="letter-heart">♥</span>
+          <p>Hiii babuuu, happy birthday to youuu! ❤️🥹</p>
+          <p>I genuinely never thought I’d meet you, and even after meeting you, I never imagined you’d become this important to me. Funny how some people just walk into your life and end up meaning so much more than you ever expected. Even before we became a thing, I knew I wanted you, and I’m so glad things turned out the way they did.</p>
+          <p>Being around you feels like the kind of peace I’ve always wanted. I love the version of myself I get to be when I’m with you, and I love you so much for bringing that out of me. You brought back my fun, carefree side, helped me find my confidence and happiness again, and healed parts of me in ways I probably can’t even put into words. I love you for all of that, and for a million little things you probably don’t even realise you do.</p>
+          <p>I’m learning so much from you, not just through what you say, but through the way you are. The way you treat people, the respect you give them, the way you care for everyone around you... you have such a sweet and pure soul, and I genuinely feel lucky to have you in my life.</p>
+          <p>Thank you for all the memories, all the laughs, all the fun, and all the little moments that have become so special to me. The calmness you carry somehow handles my chaos so perfectly, and I don’t think you realise how much I appreciate that. You mean a lot more to me than I can ever explain, babuuu.</p>
+          <p>I hope this year brings you all the happiness, love, peace and success you deserve. I hope you never lose that beautiful heart of yours or the little things that make you who you are. And I hope life gives you a thousand reasons to smile, because you really deserve that and so much more.</p>
+          <p class="signature">Happy birthday once again, babuuu. <strong>I love you chaaalaaaa!!! ❤️🫂🌍</strong></p>
+        </article>
+      </div>
+
+      <button class="next-btn" type="button">Final surprise <span>→</span></button>
+    </section>
+
+    <!-- SHEET 7: Final Page -->
+    <section class="sheet final-sheet" data-sheet="6">
+      <div class="final-hearts">♡ ♥ ♡</div>
+      <div class="final-photo-pair">
+        <div class="photo-frame final-photo"><img src="images/photo7.jpeg" alt="Us together, memory one" /></div>
+        <div class="photo-frame final-photo second-final-photo"><img src="images/photo8.jpeg" alt="Us together, memory two" /></div>
+      </div>
+      <h2>Lots of love for you ❤️</h2>
+      <p class="subtitle">Once again, happy birthday, baby!</p>
+      <p class="final-line">Here's to you, to us, and to many more beautiful memories.</p>
+      <button class="restart-btn" id="restart" type="button">Replay our little surprise ↻</button>
+    </section>
+
+    <nav class="controls" aria-label="Page navigation">
+      <button id="prev" class="nav-btn" type="button" disabled>← Back</button>
+      <div class="dots" id="dots" aria-label="Page progress"></div>
+      <button id="next" class="nav-btn" type="button">Next →</button>
+    </nav>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
